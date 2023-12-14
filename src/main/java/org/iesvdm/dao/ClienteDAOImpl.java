@@ -17,11 +17,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 //Un Repository es un componente y a su vez un estereotipo de Spring 
 //que forma parte de la ‘capa de persistencia’.
-@Repository
+@Repository //anotacion de componente (modelo)
 public class ClienteDAOImpl implements ClienteDAO {
 
 	 //Plantilla jdbc inyectada automáticamente por el framework Spring, gracias a la anotación @Autowired.
-	 @Autowired
+	 @Autowired //esta anotacion instancia un jdbctemplate, (no hace falta poner new jdbctemplate)
 	 private JdbcTemplate jdbcTemplate;
 	
 	/**

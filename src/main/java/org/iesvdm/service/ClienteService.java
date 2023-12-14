@@ -6,7 +6,7 @@ import org.iesvdm.dao.ClienteDAO;
 import org.iesvdm.modelo.Cliente;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service //anotacion de componente (controlador)
 public class ClienteService {
 	
 	private ClienteDAO clienteDAO;
