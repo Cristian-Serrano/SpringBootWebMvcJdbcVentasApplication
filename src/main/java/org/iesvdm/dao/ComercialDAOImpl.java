@@ -30,7 +30,7 @@ public class ComercialDAOImpl implements ComercialDAO {
 	@Override
 	public void create(Comercial comercial) {
 		String sqlInsert = """
-							INSERT INTO comercial (nombre, apellido1, apellido2, comisión) 
+							INSERT INTO comercial (nombre, apellido1, apellido2, comisión)
 							VALUES  (     ?,         ?,         ?,       ?)
 						   """;
 
@@ -62,7 +62,6 @@ public class ComercialDAOImpl implements ComercialDAO {
 						                      rs.getString("apellido1"),
                 							  rs.getString("apellido2"), 
                 							  rs.getFloat("comisión"))
-                						 	
         );
 		
 		log.info("Devueltos {} registros.", listComercial.size());
